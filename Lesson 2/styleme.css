@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h2,
+strong {
+    color: cyan;
+}
+
+a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul>li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+ol>li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+dt {
+    color: burlywood;
+    font-size: small;
+}
+
+dd {
+    font-size: smaller;
+}
+
+p::first-letter {
+    font-size: 1.5rem;
+}
