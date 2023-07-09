@@ -1,0 +1,79 @@
+#outer {
+    border: 2px dashed black;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 10px;
+    float: left;
+}
+
+.break {
+    clear: left;
+}
+
+ul {
+    background: red;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+ul>li {
+    display: inline;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.container {
+    background-color: rgb(219, 219, 219);
+    padding: 16px;
+    overflow: hidden;
+    width: 500px;
+}
+
+#header {
+    background-color: yellow;
+}
+
+#sidePanel {
+    background-color: aqua;
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#a,
+#b {
+    width: 100px;
+    height: 100px;
+    font: 30pt bold Helvetica, Arial, sans-serif;
+    line-height: 100px;
+    text-align: center;
+}
+
+#a {
+    background-color: lightblue;
+    float: left;
+}
+
+#b {
+    background-color: pink;
+    float: left;
+}
+
+#c {
+    background-color: rgb(219, 219, 219);
+    margin-top: 100px;
+}
+
+#d {
+    height: 100px;
+    margin-bottom: 100px;
+}
