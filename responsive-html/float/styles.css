@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(186 215 228);
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-background {
+    background-color: rgb(61 80 80);
+    overflow: hidden;
+}
+
+.menu {
+    background-color: rgb(61 80 80);
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+    float: left;
+}
+
+.columns {
+    clear: both;
+    overflow: hidden;
+}
+
+.column1 {
+    background-color: rgb(179, 179, 179);
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+
+.column2 {
+    background-color: rgb(205, 205, 205);
+    float: left;
+    width: 33%;
+    height: 300px;
+}
+
+.column3 {
+    background-color: rgb(219, 219, 219);
+    float: left;
+    width: 34%;
+    height: 300px;
+}
+
+.footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .column1 {
+        width: 50%;
+    }
+
+    .column2 {
+        width: 50%;
+    }
+
+    .column3 {
+        clear: both;
+        width: 100%;
+    }
+}
