@@ -80,9 +80,10 @@ const d = a.reduce(function (previousValue, element, index, array) {
     return previousValue * element;
 });
 
-function expect(expected, value) {
+function myFunctionTest(expected, value) {
     const successMessage = "TEST SUCCEEDED";
     const failureMessage = "TEST FAILED.  Expected " + expected + " found " + value;
+    console.assert(expected, value, failureMessage);
     if (expected === value || expected == value) {
         return successMessage;
     } else {
@@ -90,14 +91,14 @@ function expect(expected, value) {
     }
 }
 
-console.log("Expected output of max(2,3) is 3 " + expect(3, max(2, 3)));
-console.log("Expected output of max(2,3,4) is 4 " + expect(4, maxOfThree(2, 3, 4)));
-console.log("Expected output of isVowel('e') is true " + expect('true', isVowel('e')));
-console.log("Expected output of sum([1,2,3]) is 6 " + expect(6, sum([1, 2, 3])));
-console.log("Expected output of multiply([1,2,3,4]) is 24 " + expect(24, multiply([1, 2, 3, 4])));
-console.log("Expected output of reverse('jag testar') is 'ratset gaj' " + expect('ratset gaj', reverse('jag testar')));
-console.log("Expected output of findLongestWord(['This' ,'is' ,'a' ,'simple' ,'sentence']) is 8 " + expect(8, findLongestWord(['This', 'is', 'a', 'simple', 'sentence'])));
-console.log("Expected output of filterWords(['This' ,'is' ,'a' ,'simple' ,'sentence'], 3) is ['This' ,'simple' ,'sentence'] " + expect(JSON.stringify(['This', 'simple', 'sentence']), JSON.stringify(filterWords(['This', 'is', 'a', 'simple', 'sentence'], 3))));
+console.log("Expected output of max(2,3) is 3 " + myFunctionTest(3, max(2, 3)));
+console.log("Expected output of max(2,3,4) is 4 " + myFunctionTest(4, maxOfThree(2, 3, 4)));
+console.log("Expected output of isVowel('e') is true " + myFunctionTest('true', isVowel('e')));
+console.log("Expected output of sum([1,2,3]) is 6 " + myFunctionTest(6, sum([1, 2, 3])));
+console.log("Expected output of multiply([1,2,3,4]) is 24 " + myFunctionTest(24, multiply([1, 2, 3, 4])));
+console.log("Expected output of reverse('jag testar') is 'ratset gaj' " + myFunctionTest('ratset gaj', reverse('jag testar')));
+console.log("Expected output of findLongestWord(['This' ,'is' ,'a' ,'simple' ,'sentence']) is 8 " + myFunctionTest(8, findLongestWord(['This', 'is', 'a', 'simple', 'sentence'])));
+console.log("Expected output of filterWords(['This' ,'is' ,'a' ,'simple' ,'sentence'], 3) is ['This' ,'simple' ,'sentence'] " + myFunctionTest(JSON.stringify(['This', 'simple', 'sentence']), JSON.stringify(filterWords(['This', 'is', 'a', 'simple', 'sentence'], 3))));
 console.log("[" + a + "]'s each element multilpied by 10 = [" + b + "]");
 console.log("[" + a + "]'s return array with all elements equal to 3 = [" + c + "]");
 console.log("[" + a + "]'s return the product of all elements = " + d);
