@@ -1,8 +1,7 @@
 window.onload = function () {
-
+    "use strict";
     let animationFrame = 250;
     var animation = null;
-
     let textArea = document.getElementById("text-area");
     let startbutton = document.getElementById("start");
     let stopButton = document.getElementById("stop");
@@ -60,4 +59,4 @@ window.onload = function () {
             animate(textArea.value, animationFrame);
         }
     }
-}
+} 
